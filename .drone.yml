@@ -1,5 +1,8 @@
-pipeline:
-  build:
+kind: pipeline
+name: default
+
+steps:
+  - name: backend
     image: maven
     commands:
       - mvn install
